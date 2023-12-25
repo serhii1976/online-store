@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/onlineStore/static/css/main.7acaea2f.css",
-    "main.js": "/onlineStore/static/js/main.07d3183d.js",
-    "index.html": "/onlineStore/index.html",
-    "main.7acaea2f.css.map": "/onlineStore/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/onlineStore/static/js/main.07d3183d.js.map"
+    "main.css": "/online-store/static/css/main.0ca9d137.css",
+    "main.js": "/online-store/static/js/main.cf568e7a.js",
+    "static/media/bag.jpg": "/online-store/static/media/bag.1bd44f01991f6c6ba6b3.jpg",
+    "static/media/heroBg.jpg": "/online-store/static/media/heroBg.7b748ae0a11bf86d0b12.jpg",
+    "static/media/slick.svg": "/online-store/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/online-store/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/online-store/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/online-store/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/online-store/index.html",
+    "main.0ca9d137.css.map": "/online-store/static/css/main.0ca9d137.css.map",
+    "main.cf568e7a.js.map": "/online-store/static/js/main.cf568e7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.0ca9d137.css",
+    "static/js/main.cf568e7a.js"
   ]
 }
