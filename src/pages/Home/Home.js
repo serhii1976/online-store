@@ -1,6 +1,6 @@
 import SearchBar from 'components/SearchBar/SearchBar';
 import Hero from 'components/Hero/Hero';
-import MultipleItems from 'components/TopProducts/TopProducts';
+import TopProducts from 'components/TopProducts/TopProducts';
 import FilterSex from 'components/FilterSex/FilterSex';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
       <SearchBar />
       <FilterSex />
       <Hero />
-      <MultipleItems />
+      <TopProducts />
     </div>
   );
 };

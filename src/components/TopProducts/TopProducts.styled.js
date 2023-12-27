@@ -33,26 +33,3 @@ export const TitleSlider = styled.h2`
   font-weight: 500;
   line-height: normal;
 `;
-
-export const ImageSlider = styled.img`
-  width: 100%;
-`;
-
-export const TitleItem = styled.h3`
-  color: #222;
-
-  font-family: Lato;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-`;
-export const SizeItem = styled.p`
-  color: #9a9a9a;
-
-  font-family: Lato;
-  font-size: 9px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-`;
