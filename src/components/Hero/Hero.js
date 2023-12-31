@@ -1,4 +1,5 @@
-import { Button } from 'components/SignUpButton/SignUpButton.styled';
+// import { Button } from 'components/SignUpButton/SignUpButton.styled';
+import SignUpButton from 'components/SignUpButton/SignUpButton';
 import {
   HeroContainer,
   OfferWraper,
@@ -23,7 +24,7 @@ const Hero = () => {
             зареєстрованим <br /> користувачам.
           </OfferText>
         </HeroOffer>
-        <Button onClick={handleClick}>Зареєструватись</Button>
+        <SignUpButton onClick={handleClick}>Зареєструватись</SignUpButton>
       </OfferWraper>
     </HeroContainer>
   );

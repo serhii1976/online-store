@@ -56,6 +56,7 @@ export const MenuBtn = styled.button`
 `;
 
 export const PageTitle = styled.h2`
+  padding-left: 50px;
   color: ${fontColors.primary};
   font-family: ${fonts.baseTitle};
   font-size: 32px;
