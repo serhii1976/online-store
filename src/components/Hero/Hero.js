@@ -9,9 +9,9 @@ import {
 } from './Hero.styled';
 
 const Hero = () => {
-  const handleClick = () => {
-    console.log('CLICK');
-  };
+  // const handleClick = () => {
+  //   console.log('CLICK');
+  // };
   return (
     <HeroContainer>
       <OfferWraper>
@@ -24,7 +24,7 @@ const Hero = () => {
             зареєстрованим <br /> користувачам.
           </OfferText>
         </HeroOffer>
-        <SignUpButton onClick={handleClick}>Зареєструватись</SignUpButton>
+        <SignUpButton />
       </OfferWraper>
     </HeroContainer>
   );
