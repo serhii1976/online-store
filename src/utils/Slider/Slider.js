@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { MdFavoriteBorder, MdOutlineShoppingBasket } from 'react-icons/md';
 
 import { products } from 'utils/TestProduct/TestProduct';
 
@@ -13,9 +14,16 @@ import {
   ColorItem,
   PriceBox,
   Price,
+  FavoriteIcon,
+  CardWraper,
+  OldPrice,
 } from './Slider.styled.js';
 
 export default class SlickSlider extends Component {
+  static defaultProps = {
+    variant: '',
+  };
+
   render() {
     const settings = {
       dots: true,
@@ -26,11 +34,16 @@ export default class SlickSlider extends Component {
       arrows: false,
     };
 
+    const { variant } = this.props;
+
     return (
       <div>
         <Slider {...settings}>
           {products.map(product => (
-            <div key={product.id}>
+            <CardWraper key={product.id}>
+              <FavoriteIcon>
+                <MdFavoriteBorder style={{ fill: '#B2B0F7' }} />
+              </FavoriteIcon>
               <ImageSlider src={product.image} alt="bag" />
               <>
                 <ColorList>
@@ -46,9 +59,17 @@ export default class SlickSlider extends Component {
               <SizeItem>{product.size}</SizeItem>
               <PriceBox>
                 <Price>{product.price}</Price>
-                {product.basket}
+                {variant === 'sale' && <OldPrice>{product.salePrice}</OldPrice>}
+                <MdOutlineShoppingBasket
+                  style={{
+                    width: '25px',
+                    height: '25px',
+                    fill: '#222222',
+                  }}
+                />
+                {/* {product.basket} */}
               </PriceBox>
-            </div>
+            </CardWraper>
           ))}
         </Slider>
       </div>

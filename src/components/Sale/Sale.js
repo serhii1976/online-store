@@ -6,7 +6,7 @@ const SaleProducts = () => {
     <SaleBox>
       <TitleSlider />
       <WraperSlider>
-        <SlickSlider />
+        <SlickSlider variant="sale" />
       </WraperSlider>
     </SaleBox>
   );

@@ -1,10 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import { Button } from './SignUpButton.styled';
 
-const handleClick = () => {
-  console.log('CLICK');
-};
-
 const SignUpButton = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/signUp');
+  };
+
   return (
     <>
       <Button type="button" onClick={handleClick}>

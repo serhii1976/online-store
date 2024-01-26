@@ -41,8 +41,10 @@ export const ColorItem = styled.li`
 `;
 
 export const PriceBox = styled.div`
+  margin-right: 8px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const Price = styled.div`
@@ -53,4 +55,24 @@ export const Price = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+`;
+
+export const FavoriteIcon = styled.div`
+  position: absolute;
+  top: 15px;
+  right: 15px;
+`;
+export const CardWraper = styled.div`
+  position: relative;
+`;
+
+export const OldPrice = styled.div`
+  color: ${fontColors.saleOldPrice};
+
+  font-family: ${fonts.baseFont};
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
 `;

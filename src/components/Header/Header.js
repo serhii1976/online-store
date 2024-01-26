@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { IoMenu, IoClose } from 'react-icons/io5';
-import { FaRegUser } from 'react-icons/fa';
+// import { FaRegUser } from 'react-icons/fa';
 import { GiShoppingCart } from 'react-icons/gi';
 import { MdOutlineShoppingBasket } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
+
+import MenuAccount from 'components/MenuAccount/MenuAccount';
 
 import {
   HeaderBox,
@@ -53,19 +55,21 @@ export const Header = () => {
 
           <IconText>Меню</IconText>
         </IconWraper>
-        <PageTitle>BORSA</PageTitle>
-
+        <NavLink to="/">
+          <PageTitle>BORSA</PageTitle>
+        </NavLink>
         <HeaderNav>
-          <NavLink to="/">
-            <IconWraper href="/">
+          <MenuAccount />
+          {/* <NavLink to="/signUp">
+            <IconWraper>
               <FaRegUser
                 style={{ width: '20px', height: '20px', fill: '#222222' }}
               />
               <IconText>Акаунт</IconText>
             </IconWraper>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/">
-            <IconWraper href="/">
+            <IconWraper>
               <MdOutlineShoppingBasket
                 style={{ width: '20px', height: '20px', fill: '#222222' }}
               />

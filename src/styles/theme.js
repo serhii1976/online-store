@@ -18,6 +18,7 @@ export const theme = Object.freeze({
     primary: '#222222',
     secondary: '#9A9A9A',
     textHero: '#ffffff',
+    saleOldPrice: '#b2b0f7',
   },
 
   hoverButtonColor: {

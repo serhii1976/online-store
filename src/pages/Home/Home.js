@@ -5,6 +5,7 @@ import FilterSex from 'components/FilterSex/FilterSex';
 import NewProducts from 'components/NewProducts/NewProducts';
 import SaleProducts from 'components/Sale/Sale';
 import Offer from 'components/Offer/Offer';
+// import Footer from 'components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <NewProducts />
       <SaleProducts />
       <Offer />
+      {/* <Footer /> */}
     </div>
   );
 };
